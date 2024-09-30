@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">
+            Kezdőlap
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Rólunk
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#nyitvatartas">Nyitvatartás</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#lokacio">Lokáció</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/employees">
+                Mókus lányok
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Szolgáltatások
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/cakes">
+                Sütemények rendelésre
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/cafemenu"> Kávézó menü </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Nyelv
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#" (click)="changeLanguage('hu')">
+                Magyar
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" (click)="changeLanguage('en')">
+                Angol
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

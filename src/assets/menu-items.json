@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Csokoládétorta",
+    "unit": "szelet",
+    "price": 450,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Édességek"
+  },
+  {
+    "id": 2,
+    "name": "Epres sütemény",
+    "unit": "szelet",
+    "price": 500,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Édességek"
+  },
+  {
+    "id": 3,
+    "name": "Puncstorta",
+    "unit": "szelet",
+    "price": 480,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Édességek"
+  },
+  {
+    "id": 4,
+    "name": "Kekszes szelet",
+    "unit": "szelet",
+    "price": 300,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Édességek"
+  },
+  {
+    "id": 5,
+    "name": "Kávé",
+    "unit": "dl",
+    "price": 250,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 6,
+    "name": "Tej",
+    "unit": "dl",
+    "price": 200,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 7,
+    "name": "Zöld tea",
+    "unit": "dl",
+    "price": 300,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 8,
+    "name": "Üdítőital",
+    "unit": "dl",
+    "price": 350,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 9,
+    "name": "Gyümölcslé",
+    "unit": "dl",
+    "price": 400,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 10,
+    "name": "Fanta",
+    "unit": "dl",
+    "price": 300,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Italok"
+  },
+  {
+    "id": 11,
+    "name": "Saláta",
+    "unit": "tál",
+    "price": 600,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Ételek"
+  },
+  {
+    "id": 12,
+    "name": "Szendvics",
+    "unit": "db",
+    "price": 450,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Ételek"
+  },
+  {
+    "id": 13,
+    "name": "Pasta",
+    "unit": "tál",
+    "price": 700,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Ételek"
+  },
+  {
+    "id": 14,
+    "name": "Pizza",
+    "unit": "szelet",
+    "price": 600,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Ételek"
+  },
+  {
+    "id": 15,
+    "name": "Tészta saláta",
+    "unit": "tál",
+    "price": 550,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Ételek"
+  },
+  {
+    "id": 16,
+    "name": "Gyümölcskeverék",
+    "unit": "tál",
+    "price": 500,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Snackek"
+  },
+  {
+    "id": 17,
+    "name": "Fűszeres dió",
+    "unit": "dkg",
+    "price": 450,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Snackek"
+  },
+  {
+    "id": 18,
+    "name": "Sós keksz",
+    "unit": "dkg",
+    "price": 200,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Snackek"
+  },
+  {
+    "id": 19,
+    "name": "Chips",
+    "unit": "dkg",
+    "price": 300,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Snackek"
+  },
+  {
+    "id": 20,
+    "name": "Popcorn",
+    "unit": "dkg",
+    "price": 250,
+    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "category": "Snackek"
+  }
+]

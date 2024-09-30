@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Rákóczi túrós",
+    "description": "Klasszikus túrós sütemény lekvárral és habbal.",
+    "price": 1000,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["túrós", "gyümölcsös"]
+  },
+  {
+    "name": "Gesztenyepüré",
+    "description": "Finom gesztenyemassza tejszínhabbal, igazi különlegesség.",
+    "price": 900,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["gesztenye", "krémes"]
+  },
+  {
+    "name": "Kókuszgolyó",
+    "description": "Kókuszos édesség, amely gyorsan elkészíthető.",
+    "price": 800,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["kókusz", "süti"]
+  },
+  {
+    "name": "Almás pite",
+    "description": "Friss almával és fűszerekkel töltött, ropogós pite.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["alma", "pite"]
+  },
+  {
+    "name": "Kakaós csiga",
+    "description": "Finom kakaós töltelékkel készült, puha péksütemény.",
+    "price": 700,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["kakaó", "péksütemény"]
+  },
+  {
+    "name": "Puncstorta",
+    "description": "Réteges torta, ízletes puncs krémmel töltve.",
+    "price": 1200,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["torta", "krémes"]
+  },
+  {
+    "name": "Zserbó",
+    "description": "Diós és baracklekváros sütemény, a klasszikus magyar édesség.",
+    "price": 1100,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["diós", "lekváros"]
+  },
+  {
+    "name": "Sárgabarackos pite",
+    "description": "Friss sárgabarackkal töltött, édes pite.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["sárgabarack", "gyümölcsös"]
+  },
+  {
+    "name": "Túrófánk",
+    "description": "Túrós fánk, amely puha és ízletes.",
+    "price": 850,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["túró", "fánk"]
+  },
+  {
+    "name": "Mákos guba",
+    "description": "Édes, mákos sütemény, amely tejben áztatva készül.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["mák", "desszert"]
+  },
+  {
+    "name": "Mennyei túrós süti",
+    "description": "Finom túrós sütemény, ropogós tésztával.",
+    "price": 1000,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["túró", "süti"]
+  },
+  {
+    "name": "Fahéjas csiga",
+    "description": "Fahéjjal és cukorral töltött, puha péksütemény.",
+    "price": 800,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["fahéj", "péksütemény"]
+  },
+  {
+    "name": "Süteményes piskóta",
+    "description": "Finom, puha piskóta, amely bármilyen töltelékkel készíthető.",
+    "price": 900,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["piskóta", "sütemény"]
+  },
+  {
+    "name": "Lemonade Cake",
+    "description": "Friss citromos sütemény, amely üdítő ízélményt nyújt.",
+    "price": 1100,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["citrom", "frissítő"]
+  }
+]

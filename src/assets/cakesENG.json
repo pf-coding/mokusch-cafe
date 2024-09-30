@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Rákóczi Túrós",
+    "description": "Classic cheese cake with jam and cream.",
+    "price": 1000,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["cheese", "fruity"]
+  },
+  {
+    "name": "Gesztenyepüré",
+    "description": "Delicious chestnut puree with whipped cream, a true specialty.",
+    "price": 900,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["chestnut", "creamy"]
+  },
+  {
+    "name": "Coconut Ball",
+    "description": "Coconut dessert that is quick and easy to make.",
+    "price": 800,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["coconut", "dessert"]
+  },
+  {
+    "name": "Apple Pie",
+    "description": "Crispy pie filled with fresh apples and spices.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["apple", "pie"]
+  },
+  {
+    "name": "Chocolate Croissant",
+    "description": "Soft pastry filled with delicious chocolate.",
+    "price": 700,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["chocolate", "pastry"]
+  },
+  {
+    "name": "Punch Cake",
+    "description": "Layered cake filled with tasty punch cream.",
+    "price": 1200,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["cake", "creamy"]
+  },
+  {
+    "name": "Zserbó",
+    "description": "Nutty and apricot jam pastry, a classic Hungarian dessert.",
+    "price": 1100,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["nutty", "jam"]
+  },
+  {
+    "name": "Apricot Pie",
+    "description": "Sweet pie filled with fresh apricots.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["apricot", "fruity"]
+  },
+  {
+    "name": "Cheese Donut",
+    "description": "Cheese donut that is soft and tasty.",
+    "price": 850,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["cheese", "donut"]
+  },
+  {
+    "name": "Poppy Seed Guba",
+    "description": "Sweet poppy seed dessert soaked in milk.",
+    "price": 950,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["poppy seed", "dessert"]
+  },
+  {
+    "name": "Heavenly Cheese Cake",
+    "description": "Delicious cheese cake with a crispy crust.",
+    "price": 1000,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["cheese", "cake"]
+  },
+  {
+    "name": "Cinnamon Roll",
+    "description": "Soft pastry filled with cinnamon and sugar.",
+    "price": 800,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["cinnamon", "pastry"]
+  },
+  {
+    "name": "Pastry Cake",
+    "description": "Delicious, soft sponge cake that can be filled with any filling.",
+    "price": 900,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["sponge", "cake"]
+  },
+  {
+    "name": "Lemonade Cake",
+    "description": "Fresh lemon cake that provides a refreshing taste experience.",
+    "price": 1100,
+    "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+    "tags": ["lemon", "refreshing"]
+  }
+]

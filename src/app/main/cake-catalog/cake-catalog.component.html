@@ -1,0 +1,89 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-4">Rendelésre válaszható süteményeink</h2>
+      <p class="lead">
+        Minden falat egy igazi élvezet, amelyet a legfrissebb alapanyagokból,
+        szeretettel és odafigyeléssel készítünk. Legyen szó születésnapi
+        buliról, esküvőről, évfordulóról vagy csak egy kis kényeztetésről,
+        nálunk garantáltan megtalálod a tökéletes édességet!
+      </p>
+    </div>
+    <div class="col-md-6">
+      <!-- Popular Tags -->
+      <div class="popular-tags mb-3">
+        <div class="tags">
+          <span
+            *ngFor="
+              let tag of showAllTagsFlag ? popularTags : popularTags.slice(0, 5)
+            "
+            (click)="filterByTag(tag)"
+            [ngClass]="{
+              badge: true,
+              'badge badge-secondary': true,
+              active: selectedTags.includes(tag)
+            }"
+          >
+            {{ tag }}
+          </span>
+        </div>
+        <button (click)="showAllTags()" class="btn btn-primary mt-3">
+          {{ showAllTagsFlag ? "Kevesebb" : "Több" }}
+        </button>
+      </div>
+
+      <!-- Cake List -->
+      <div class="cake-list">
+        <div
+          *ngFor="let cake of paginatedCakes"
+          class="cake-item mb-3 border p-3 rounded cursor-pointer"
+          (click)="selectCake(cake)"
+          [ngClass]="{
+            'active-cake': selectedCake === cake
+          }"
+        >
+          <h5 class="cake-title">{{ cake.name }}</h5>
+          <p>{{ cake.description }}</p>
+          <p>{{ cake.price }} HUF</p>
+          <div class="tags">
+            <span *ngFor="let tag of cake.tags" class="badge badge-info me-1">
+              {{ tag }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination mt-3">
+        <button
+          (click)="prevPage()"
+          [disabled]="currentPage === 1"
+          class="btn btn-primary m-2"
+        >
+          Előző
+        </button>
+        <button
+          (click)="nextPage()"
+          [disabled]="currentPage === totalPages"
+          class="btn btn-primary m-2"
+        >
+          Következő
+        </button>
+      </div>
+    </div>
+
+    <!-- Selected Cake Image -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <div class="selected-cake-image mt-3" *ngIf="selectedCake">
+        <h5 class="text-center">{{ selectedCake.name }}</h5>
+        <img
+          [src]="selectedCake.imageUrl"
+          alt="{{ selectedCake.name }}"
+          class="img-fluid border rounded"
+        />
+        <p class="mt-2 text-center">{{ selectedCake.description }}</p>
+        <p class="text-center">{{ selectedCake.price }} HUF</p>
+      </div>
+    </div>
+  </div>
+</div>

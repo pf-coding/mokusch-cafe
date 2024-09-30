@@ -1,0 +1,45 @@
+<div class="container">
+  <!-- Szűrők -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <select [(ngModel)]="selectedCategory" class="form-control">
+        <option value="">Összes kategória</option>
+        <option
+          *ngFor="let category of groupedMenuItems | keyvalue"
+          [value]="category.key"
+        >
+          {{ category.key }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Kategória szerinti csoportosítás -->
+  <div
+    *ngFor="let category of groupedMenuItems | keyvalue"
+    class="category-section"
+  >
+    <h3>{{ category.key }}</h3>
+    <div class="row">
+      <div class="col-md-2" *ngFor="let item of category.value">
+        <div
+          class="card mb-4"
+          *ngIf="
+            (selectedCategory ? item.category === selectedCategory : true) &&
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+          "
+        >
+          <img
+            [src]="item.imageUrl"
+            class="card-img-top"
+            alt="{{ item.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.unit }}: {{ item.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
