@@ -4,11 +4,13 @@ import { EmployeeCardsComponent } from './main/employee-cards/employee-cards.com
 import { CakeCatalogComponent } from './main/cake-catalog/cake-catalog.component';
 import { MainComponent } from './main/main.component';
 import { CafemenuComponent } from './main/cafemenu/cafemenu.component';
+import { OrderComponent } from './main/order/order.component';
 
 const routes: Routes = [
   { path: 'employees', component: EmployeeCardsComponent },
   { path: 'cakes', component: CakeCatalogComponent },
   { path: 'cafemenu', component: CafemenuComponent },
+  { path: 'cart', component: OrderComponent },
   { path: '', component: MainComponent },
 ];
 

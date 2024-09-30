@@ -73,6 +73,14 @@
             </li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/cart">
+            Kosár
+            <span *ngIf="cartItemCount > 0" class="badge bg-danger ms-2">
+              {{ cartItemCount }}
+            </span>
+          </a>
+        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"

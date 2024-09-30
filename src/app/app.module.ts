@@ -12,6 +12,7 @@ import { CakeCatalogComponent } from './main/cake-catalog/cake-catalog.component
 import { AboutUsComponent } from './main/about-us/about-us.component';
 import { CafemenuComponent } from './main/cafemenu/cafemenu.component';
 import { FormsModule } from '@angular/forms';
+import { OrderComponent } from './main/order/order.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     CakeCatalogComponent,
     AboutUsComponent,
     CafemenuComponent,
+    OrderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

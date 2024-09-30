@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Rákóczi Túrós",
     "description": "Classic cheese cake with jam and cream.",
     "price": 1000,
@@ -7,6 +8,7 @@
     "tags": ["cheese", "fruity"]
   },
   {
+    "id": 2,
     "name": "Gesztenyepüré",
     "description": "Delicious chestnut puree with whipped cream, a true specialty.",
     "price": 900,
@@ -14,6 +16,7 @@
     "tags": ["chestnut", "creamy"]
   },
   {
+    "id": 3,
     "name": "Coconut Ball",
     "description": "Coconut dessert that is quick and easy to make.",
     "price": 800,
@@ -21,6 +24,7 @@
     "tags": ["coconut", "dessert"]
   },
   {
+    "id": 4,
     "name": "Apple Pie",
     "description": "Crispy pie filled with fresh apples and spices.",
     "price": 950,
@@ -28,6 +32,7 @@
     "tags": ["apple", "pie"]
   },
   {
+    "id": 5,
     "name": "Chocolate Croissant",
     "description": "Soft pastry filled with delicious chocolate.",
     "price": 700,
@@ -35,6 +40,7 @@
     "tags": ["chocolate", "pastry"]
   },
   {
+    "id": 6,
     "name": "Punch Cake",
     "description": "Layered cake filled with tasty punch cream.",
     "price": 1200,
@@ -42,6 +48,7 @@
     "tags": ["cake", "creamy"]
   },
   {
+    "id": 7,
     "name": "Zserbó",
     "description": "Nutty and apricot jam pastry, a classic Hungarian dessert.",
     "price": 1100,
@@ -49,6 +56,7 @@
     "tags": ["nutty", "jam"]
   },
   {
+    "id": 8,
     "name": "Apricot Pie",
     "description": "Sweet pie filled with fresh apricots.",
     "price": 950,
@@ -56,6 +64,7 @@
     "tags": ["apricot", "fruity"]
   },
   {
+    "id": 9,
     "name": "Cheese Donut",
     "description": "Cheese donut that is soft and tasty.",
     "price": 850,
@@ -63,6 +72,7 @@
     "tags": ["cheese", "donut"]
   },
   {
+    "id": 10,
     "name": "Poppy Seed Guba",
     "description": "Sweet poppy seed dessert soaked in milk.",
     "price": 950,
@@ -70,6 +80,7 @@
     "tags": ["poppy seed", "dessert"]
   },
   {
+    "id": 11,
     "name": "Heavenly Cheese Cake",
     "description": "Delicious cheese cake with a crispy crust.",
     "price": 1000,
@@ -77,6 +88,7 @@
     "tags": ["cheese", "cake"]
   },
   {
+    "id": 12,
     "name": "Cinnamon Roll",
     "description": "Soft pastry filled with cinnamon and sugar.",
     "price": 800,
@@ -84,6 +96,7 @@
     "tags": ["cinnamon", "pastry"]
   },
   {
+    "id": 13,
     "name": "Pastry Cake",
     "description": "Delicious, soft sponge cake that can be filled with any filling.",
     "price": 900,
@@ -91,6 +104,7 @@
     "tags": ["sponge", "cake"]
   },
   {
+    "id": 14,
     "name": "Lemonade Cake",
     "description": "Fresh lemon cake that provides a refreshing taste experience.",
     "price": 1100,

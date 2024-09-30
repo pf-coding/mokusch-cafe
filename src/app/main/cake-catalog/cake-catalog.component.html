@@ -28,7 +28,7 @@
           </span>
         </div>
         <button (click)="showAllTags()" class="btn btn-primary mt-3">
-          {{ showAllTagsFlag ? "Kevesebb" : "Több" }}
+          {{ showAllTagsFlag ? "Kevesebb címke" : "Több címke" }}
         </button>
       </div>
 
@@ -45,11 +45,25 @@
           <h5 class="cake-title">{{ cake.name }}</h5>
           <p>{{ cake.description }}</p>
           <p>{{ cake.price }} HUF</p>
+
           <div class="tags">
             <span *ngFor="let tag of cake.tags" class="badge badge-info me-1">
               {{ tag }}
             </span>
           </div>
+          <button
+            (click)="toggleSelection(cake)"
+            class="btn d-flex mt-2 btn-sm"
+            [ngClass]="{
+              'btn-danger': isSelected(cake),
+              'btn-primary': !isSelected(cake)
+            }"
+          >
+            {{ isSelected(cake) ? "Törlés" : "Kosárhoz adom" }}
+          </button>
+          <button class="btn btn-info d-flex mt-2 btn-sm">
+            Információk és allergének
+          </button>
         </div>
       </div>
 
@@ -58,7 +72,7 @@
         <button
           (click)="prevPage()"
           [disabled]="currentPage === 1"
-          class="btn btn-primary m-2"
+          class="btn btn-primary btn-sm m-2"
         >
           Előző
         </button>

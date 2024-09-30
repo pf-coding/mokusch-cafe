@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslationService } from 'src/app/services/translation-service.service';
 import { CakeModel } from 'src/app/models/cake.model';
+import { OrderService } from 'src/app/services/order-service.service';
 
 @Component({
   selector: 'app-cake-catalog',
@@ -10,25 +11,24 @@ import { CakeModel } from 'src/app/models/cake.model';
 export class CakeCatalogComponent implements OnInit {
   cakes: CakeModel[] = [];
   paginatedCakes: CakeModel[] = [];
+  selectedCakes: CakeModel[] = [];
   selectedCake: CakeModel | null = null;
   currentPage: number = 1;
   itemsPerPage: number = 5;
   selectedTags: string[] = [];
-  showAllTagsFlag: boolean = false; // Flag to control showing all tags
+  showAllTagsFlag: boolean = false;
 
-  constructor(public translationService: TranslationService) {}
+  constructor(
+    public translationService: TranslationService,
+    public orderService: OrderService
+  ) {}
 
   ngOnInit() {
     this.translationService.cakes$.subscribe((cakes) => {
       this.cakes = cakes;
       this.updatePagination(); // Update pagination whenever cakes are loaded
+      this.updateSelectedCakes(); // Load selected cakes from order service
     });
-  }
-
-  updatePagination() {
-    const filteredCakes = this.getFilteredCakes();
-    const start = (this.currentPage - 1) * this.itemsPerPage;
-    this.paginatedCakes = filteredCakes.slice(start, start + this.itemsPerPage);
   }
 
   selectCake(cake: CakeModel) {
@@ -92,5 +92,37 @@ export class CakeCatalogComponent implements OnInit {
   changeLanguage(lang: 'hu' | 'en'): void {
     this.translationService.setLanguage(lang);
     this.updatePagination(); // Refresh the pagination when language changes
+  }
+
+  updateSelectedCakes() {
+    // Update the cakes list to reflect the ones currently in the order
+    this.cakes.forEach((cake) => {
+      cake.selected = this.orderService
+        .getOrderItems()
+        .some((item) => item.id === cake.id); // assuming each cake has a unique id
+    });
+  }
+  updatePagination() {
+    const filteredCakes = this.getFilteredCakes();
+    const start = (this.currentPage - 1) * this.itemsPerPage;
+    this.paginatedCakes = filteredCakes.slice(start, start + this.itemsPerPage);
+  }
+
+  toggleSelection(cake: CakeModel) {
+    const index = this.orderService.getOrderItems().findIndex(item => item.id === cake.id);
+
+    if (index > -1) {
+      // If the cake is already selected, remove it from order
+      this.orderService.removeFromOrder(index);
+    } else {
+      // Only allow selection if it's not already in order
+      this.orderService.addToOrder(cake);
+    }
+    this.updateSelectedCakes(); // Refresh the selected cakes status
+    this.updatePagination(); // Refresh pagination
+  }
+
+  isSelected(cake: CakeModel): boolean {
+    return this.orderService.getOrderItems().some(item => item.id === cake.id); // Check if the cake is selected
   }
 }

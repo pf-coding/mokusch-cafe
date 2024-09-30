@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "Rákóczi túrós",
     "description": "Klasszikus túrós sütemény lekvárral és habbal.",
     "price": 1000,
@@ -7,6 +8,7 @@
     "tags": ["túrós", "gyümölcsös"]
   },
   {
+    "id": "2",
     "name": "Gesztenyepüré",
     "description": "Finom gesztenyemassza tejszínhabbal, igazi különlegesség.",
     "price": 900,
@@ -14,6 +16,7 @@
     "tags": ["gesztenye", "krémes"]
   },
   {
+    "id": "3",
     "name": "Kókuszgolyó",
     "description": "Kókuszos édesség, amely gyorsan elkészíthető.",
     "price": 800,
@@ -21,6 +24,7 @@
     "tags": ["kókusz", "süti"]
   },
   {
+    "id": "4",
     "name": "Almás pite",
     "description": "Friss almával és fűszerekkel töltött, ropogós pite.",
     "price": 950,
@@ -28,6 +32,7 @@
     "tags": ["alma", "pite"]
   },
   {
+    "id": "5",
     "name": "Kakaós csiga",
     "description": "Finom kakaós töltelékkel készült, puha péksütemény.",
     "price": 700,
@@ -35,6 +40,7 @@
     "tags": ["kakaó", "péksütemény"]
   },
   {
+    "id": "6",
     "name": "Puncstorta",
     "description": "Réteges torta, ízletes puncs krémmel töltve.",
     "price": 1200,
@@ -42,6 +48,7 @@
     "tags": ["torta", "krémes"]
   },
   {
+    "id": "7",
     "name": "Zserbó",
     "description": "Diós és baracklekváros sütemény, a klasszikus magyar édesség.",
     "price": 1100,
@@ -49,6 +56,7 @@
     "tags": ["diós", "lekváros"]
   },
   {
+    "id": "8",
     "name": "Sárgabarackos pite",
     "description": "Friss sárgabarackkal töltött, édes pite.",
     "price": 950,
@@ -56,6 +64,7 @@
     "tags": ["sárgabarack", "gyümölcsös"]
   },
   {
+    "id": "9",
     "name": "Túrófánk",
     "description": "Túrós fánk, amely puha és ízletes.",
     "price": 850,
@@ -63,6 +72,7 @@
     "tags": ["túró", "fánk"]
   },
   {
+    "id": "10",
     "name": "Mákos guba",
     "description": "Édes, mákos sütemény, amely tejben áztatva készül.",
     "price": 950,
@@ -70,6 +80,7 @@
     "tags": ["mák", "desszert"]
   },
   {
+    "id": "11",
     "name": "Mennyei túrós süti",
     "description": "Finom túrós sütemény, ropogós tésztával.",
     "price": 1000,
@@ -77,6 +88,7 @@
     "tags": ["túró", "süti"]
   },
   {
+    "id": "12",
     "name": "Fahéjas csiga",
     "description": "Fahéjjal és cukorral töltött, puha péksütemény.",
     "price": 800,
@@ -84,6 +96,7 @@
     "tags": ["fahéj", "péksütemény"]
   },
   {
+    "id": "13",
     "name": "Süteményes piskóta",
     "description": "Finom, puha piskóta, amely bármilyen töltelékkel készíthető.",
     "price": 900,
@@ -91,6 +104,7 @@
     "tags": ["piskóta", "sütemény"]
   },
   {
+    "id": "14",
     "name": "Lemonade Cake",
     "description": "Friss citromos sütemény, amely üdítő ízélményt nyújt.",
     "price": 1100,
