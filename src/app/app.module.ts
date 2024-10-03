@@ -13,6 +13,7 @@ import { AboutUsComponent } from './main/about-us/about-us.component';
 import { CafemenuComponent } from './main/cafemenu/cafemenu.component';
 import { FormsModule } from '@angular/forms';
 import { OrderComponent } from './main/order/order.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,13 @@ import { OrderComponent } from './main/order/order.component';
     CafemenuComponent,
     OrderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
