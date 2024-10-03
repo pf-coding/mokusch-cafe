@@ -5,7 +5,7 @@ export interface CakeModel {
   price: number;
   imageUrl: string;
   tags: string[];
-  comment: string;
-  quantity: number;
+  comment?: string;
+  quantity?: number;
   selected?: boolean;
 }
