@@ -109,7 +109,9 @@ export class CakeCatalogComponent implements OnInit {
   }
 
   toggleSelection(cake: CakeModel) {
-    const index = this.orderService.getOrderItems().findIndex(item => item.id === cake.id);
+    const index = this.orderService
+      .getOrderItems()
+      .findIndex((item) => item.id === cake.id);
 
     if (index > -1) {
       // If the cake is already selected, remove it from order
@@ -123,6 +125,8 @@ export class CakeCatalogComponent implements OnInit {
   }
 
   isSelected(cake: CakeModel): boolean {
-    return this.orderService.getOrderItems().some(item => item.id === cake.id); // Check if the cake is selected
+    return this.orderService
+      .getOrderItems()
+      .some((item) => item.id === cake.id); // Check if the cake is selected
   }
 }

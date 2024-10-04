@@ -86,8 +86,10 @@
       </div>
     </div>
 
-    <!-- Selected Cake Image -->
-    <div class="col-md-6 d-flex justify-content-center align-items-center">
+    <!-- Selected Cake Image and Allergen Table -->
+    <div
+      class="col-md-6 d-flex justify-content-center align-items-start flex-column"
+    >
       <div class="selected-cake-image mt-3" *ngIf="selectedCake">
         <h5 class="text-center">{{ selectedCake.name }}</h5>
         <img
@@ -97,6 +99,105 @@
         />
         <p class="mt-2 text-center">{{ selectedCake.description }}</p>
         <p class="text-center">{{ selectedCake.price }} HUF</p>
+
+        <!-- Allergen Table -->
+        <!-- Allergen Table -->
+        <table class="table table-bordered mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Allergén</th>
+              <th scope="col">Tartalmaz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Glutént tartalmazó gabonafélék</td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsGluten,
+                    'badge-success': !selectedCake.allergens.containsGluten
+                  }"
+                >
+                  {{ selectedCake.allergens.containsGluten ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Tojás</td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsEgg,
+                    'badge-success': !selectedCake.allergens.containsEgg
+                  }"
+                >
+                  {{ selectedCake.allergens.containsEgg ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Tej, tejtermék</td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsDairy,
+                    'badge-success': !selectedCake.allergens.containsDairy
+                  }"
+                >
+                  {{ selectedCake.allergens.containsDairy ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Diófélék (dió, mandula, mogyoró, gesztenye, pekándió stb.)
+              </td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsNuts,
+                    'badge-success': !selectedCake.allergens.containsNuts
+                  }"
+                >
+                  {{ selectedCake.allergens.containsNuts ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Szezámmag</td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsSesame,
+                    'badge-success': !selectedCake.allergens.containsSesame
+                  }"
+                >
+                  {{ selectedCake.allergens.containsSesame ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Mogyoró</td>
+              <td>
+                <span
+                  class="badge"
+                  [ngClass]="{
+                    'badge-danger': selectedCake.allergens.containsHazelnut,
+                    'badge-success': !selectedCake.allergens.containsHazelnut
+                  }"
+                >
+                  {{ selectedCake.allergens.containsHazelnut ? "Igen" : "Nem" }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

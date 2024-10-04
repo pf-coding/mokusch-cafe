@@ -5,7 +5,15 @@
     "description": "Klasszikus túrós sütemény lekvárral és habbal.",
     "price": 1000,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["túrós", "gyümölcsös"]
+    "tags": ["túrós", "gyümölcsös"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": true,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "2",
@@ -13,7 +21,15 @@
     "description": "Finom gesztenyemassza tejszínhabbal, igazi különlegesség.",
     "price": 900,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["gesztenye", "krémes"]
+    "tags": ["gesztenye", "krémes"],
+    "allergens": {
+      "containsGluten": false,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "3",
@@ -21,7 +37,15 @@
     "description": "Kókuszos édesség, amely gyorsan elkészíthető.",
     "price": 800,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["kókusz", "süti"]
+    "tags": ["kókusz", "süti"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "4",
@@ -29,7 +53,15 @@
     "description": "Friss almával és fűszerekkel töltött, ropogós pite.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["alma", "pite"]
+    "tags": ["alma", "pite"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "5",
@@ -37,7 +69,15 @@
     "description": "Finom kakaós töltelékkel készült, puha péksütemény.",
     "price": 700,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["kakaó", "péksütemény"]
+    "tags": ["kakaó", "péksütemény"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "6",
@@ -45,7 +85,15 @@
     "description": "Réteges torta, ízletes puncs krémmel töltve.",
     "price": 1200,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["torta", "krémes"]
+    "tags": ["torta", "krémes"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "7",
@@ -53,7 +101,15 @@
     "description": "Diós és baracklekváros sütemény, a klasszikus magyar édesség.",
     "price": 1100,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["diós", "lekváros"]
+    "tags": ["diós", "lekváros"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": false,
+      "containsNuts": true,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "8",
@@ -61,7 +117,15 @@
     "description": "Friss sárgabarackkal töltött, édes pite.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["sárgabarack", "gyümölcsös"]
+    "tags": ["sárgabarack", "gyümölcsös"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "9",
@@ -69,7 +133,15 @@
     "description": "Túrós fánk, amely puha és ízletes.",
     "price": 850,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["túró", "fánk"]
+    "tags": ["túró", "fánk"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "10",
@@ -77,7 +149,15 @@
     "description": "Édes, mákos sütemény, amely tejben áztatva készül.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["mák", "desszert"]
+    "tags": ["mák", "desszert"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "11",
@@ -85,7 +165,15 @@
     "description": "Finom túrós sütemény, ropogós tésztával.",
     "price": 1000,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["túró", "süti"]
+    "tags": ["túró", "süti"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "12",
@@ -93,7 +181,15 @@
     "description": "Fahéjjal és cukorral töltött, puha péksütemény.",
     "price": 800,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["fahéj", "péksütemény"]
+    "tags": ["fahéj", "péksütemény"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "13",
@@ -101,7 +197,15 @@
     "description": "Finom, puha piskóta, amely bármilyen töltelékkel készíthető.",
     "price": 900,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["piskóta", "sütemény"]
+    "tags": ["piskóta", "sütemény"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": "14",
@@ -109,6 +213,14 @@
     "description": "Friss citromos sütemény, amely üdítő ízélményt nyújt.",
     "price": 1100,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["citrom", "frissítő"]
+    "tags": ["citrom", "frissítő"],
+    "allergens": {
+      "containsGluten": true,
+      "containsEgg": true,
+      "containsDairy": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   }
 ]

@@ -5,7 +5,15 @@
     "description": "Classic cheese cake with jam and cream.",
     "price": 1000,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["cheese", "fruity"]
+    "tags": ["cheese", "fruity"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 2,
@@ -13,7 +21,15 @@
     "description": "Delicious chestnut puree with whipped cream, a true specialty.",
     "price": 900,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["chestnut", "creamy"]
+    "tags": ["chestnut", "creamy"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": false,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 3,
@@ -21,7 +37,15 @@
     "description": "Coconut dessert that is quick and easy to make.",
     "price": 800,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["coconut", "dessert"]
+    "tags": ["coconut", "dessert"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": false,
+      "containsGluten": false,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 4,
@@ -29,7 +53,15 @@
     "description": "Crispy pie filled with fresh apples and spices.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["apple", "pie"]
+    "tags": ["apple", "pie"],
+    "allergens": {
+      "containsLactose": false,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 5,
@@ -37,7 +69,15 @@
     "description": "Soft pastry filled with delicious chocolate.",
     "price": 700,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["chocolate", "pastry"]
+    "tags": ["chocolate", "pastry"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 6,
@@ -45,7 +85,15 @@
     "description": "Layered cake filled with tasty punch cream.",
     "price": 1200,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["cake", "creamy"]
+    "tags": ["cake", "creamy"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 7,
@@ -53,7 +101,15 @@
     "description": "Nutty and apricot jam pastry, a classic Hungarian dessert.",
     "price": 1100,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["nutty", "jam"]
+    "tags": ["nutty", "jam"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": true,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 8,
@@ -61,7 +117,15 @@
     "description": "Sweet pie filled with fresh apricots.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["apricot", "fruity"]
+    "tags": ["apricot", "fruity"],
+    "allergens": {
+      "containsLactose": false,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 9,
@@ -69,7 +133,15 @@
     "description": "Cheese donut that is soft and tasty.",
     "price": 850,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["cheese", "donut"]
+    "tags": ["cheese", "donut"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 10,
@@ -77,7 +149,15 @@
     "description": "Sweet poppy seed dessert soaked in milk.",
     "price": 950,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["poppy seed", "dessert"]
+    "tags": ["poppy seed", "dessert"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 11,
@@ -85,7 +165,15 @@
     "description": "Delicious cheese cake with a crispy crust.",
     "price": 1000,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["cheese", "cake"]
+    "tags": ["cheese", "cake"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 12,
@@ -93,7 +181,15 @@
     "description": "Soft pastry filled with cinnamon and sugar.",
     "price": 800,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["cinnamon", "pastry"]
+    "tags": ["cinnamon", "pastry"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 13,
@@ -101,7 +197,15 @@
     "description": "Delicious, soft sponge cake that can be filled with any filling.",
     "price": 900,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["sponge", "cake"]
+    "tags": ["sponge", "cake"],
+    "allergens": {
+      "containsLactose": false,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   },
   {
     "id": 14,
@@ -109,6 +213,14 @@
     "description": "Fresh lemon cake that provides a refreshing taste experience.",
     "price": 1100,
     "imageUrl": "https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
-    "tags": ["lemon", "refreshing"]
+    "tags": ["lemon", "refreshing"],
+    "allergens": {
+      "containsLactose": true,
+      "containsEgg": true,
+      "containsGluten": true,
+      "containsNuts": false,
+      "containsSesame": false,
+      "containsHazelnut": false
+    }
   }
 ]
