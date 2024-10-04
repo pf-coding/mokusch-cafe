@@ -367,7 +367,7 @@ export class OrderComponent implements OnInit {
           this.orderForm.value.date
         } dátumra, ${this.orderForm.value.time} órára ${
           this.orderForm.value.deliveryMethod
-        }  módon.\nAdataim:\nE-mail: ${this.orderForm.value.email}\nNév: ${
+        } venném át.\nAdataim:\nE-mail: ${this.orderForm.value.email}\nNév: ${
           this.orderForm.value.name
         }\nTelefonszám: ${this.orderForm.value.phone}\nÜzenet: ${
           this.orderForm.value.message
