@@ -1,3 +1,48 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+
+<!-- Toast container for all global toasts -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <!-- Toast for success -->
+  <div
+    id="liveToastSuccess"
+    class="toast"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="toast-header">
+      <strong class="me-auto">Rendelés</strong>
+      <small>Most</small>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="toast-body">A rendelés sikeresen elküldve!</div>
+  </div>
+
+  <!-- Toast for error -->
+  <div
+    id="liveToastError"
+    class="toast"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="toast-header">
+      <strong class="me-auto">Hiba</strong>
+      <small>Most</small>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="toast"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="toast-body">Hiba történt az e-mail küldésekor!</div>
+  </div>
+</div>
