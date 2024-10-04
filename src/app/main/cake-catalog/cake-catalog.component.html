@@ -44,7 +44,7 @@
         >
           <h5 class="cake-title">{{ cake.name }}</h5>
           <p>{{ cake.description }}</p>
-          <p>{{ cake.price }} HUF</p>
+          <p>{{ cake.price }} / {{ cake.unitOfMeasure }}</p>
 
           <div class="tags">
             <span *ngFor="let tag of cake.tags" class="badge badge-info me-1">

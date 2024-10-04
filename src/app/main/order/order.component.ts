@@ -74,8 +74,21 @@ export class OrderComponent implements OnInit {
   get totalPrice(): number {
     return this.orderItems.reduce((total, item, i) => {
       const quantity = this.items.at(i).get('quantity')?.value || 0; // Safe access with default value
-      return total + item.price * quantity;
+      const additionalPrice = item.additionalPrice || 0; // Include additional price adjustments per item
+      return total + (item.price + additionalPrice) * quantity; // Adjust total price calculation
     }, 0);
+  }
+
+  updatePrice(index: number, priceChange: number, event: Event) {
+    const input = event.target as HTMLInputElement; // Cast event.target
+    const isChecked = input.checked; // Access checked property safely
+
+    if (isChecked) {
+      this.orderItems[index].additionalPrice =
+        (this.orderItems[index].additionalPrice || 0) + priceChange; // Increment additional price if checked
+    } else {
+      this.orderItems[index].additionalPrice! -= priceChange; // Decrement additional price if unchecked
+    }
   }
 
   showToast(toastId: string) {

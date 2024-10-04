@@ -9,6 +9,9 @@ export interface CakeModel {
   quantity?: number;
   selected?: boolean;
   allergens: AllergenInfo; // New property for allergens
+  category: string;
+  unitOfMeasure: string;
+  additionalPrice?: number;
 }
 
 export interface AllergenInfo {
