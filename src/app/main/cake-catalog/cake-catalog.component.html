@@ -9,29 +9,22 @@
         nálunk garantáltan megtalálod a tökéletes édességet!
       </p>
     </div>
-    <div class="col-md-6">
-      <!-- Popular Tags -->
-      <div class="popular-tags mb-3">
-        <div class="tags">
-          <span
-            *ngFor="
-              let tag of showAllTagsFlag ? popularTags : popularTags.slice(0, 5)
-            "
-            (click)="filterByTag(tag)"
-            [ngClass]="{
-              badge: true,
-              'badge badge-secondary': true,
-              active: selectedTags.includes(tag)
-            }"
-          >
-            {{ tag }}
-          </span>
-        </div>
-        <button (click)="showAllTags()" class="btn btn-primary mt-3">
-          {{ showAllTagsFlag ? "Kevesebb címke" : "Több címke" }}
-        </button>
-      </div>
 
+    <div class="form-group mb-4">
+      <label for="categoryFilter">Kategória szűrő</label>
+      <select
+        id="categoryFilter"
+        class="form-control"
+        (change)="filterByCategory($event)"
+      >
+        <option value="">Minden kategória</option>
+        <option *ngFor="let category of availableCategories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
       <!-- Cake List -->
       <div class="cake-list">
         <div
@@ -44,7 +37,7 @@
         >
           <h5 class="cake-title">{{ cake.name }}</h5>
           <p>{{ cake.description }}</p>
-          <p>{{ cake.price }} / {{ cake.unitOfMeasure }}</p>
+          <p>{{ cake.price }} HUF / {{ cake.unitOfMeasure }}</p>
 
           <div class="tags">
             <span *ngFor="let tag of cake.tags" class="badge badge-info me-1">
@@ -84,23 +77,43 @@
           Következő
         </button>
       </div>
+      <!-- Popular Tags -->
+      <div class="popular-tags m-2">
+        <div class="tags">
+          <span
+            *ngFor="
+              let tag of showAllTagsFlag ? popularTags : popularTags.slice(0, 5)
+            "
+            (click)="filterByTag(tag)"
+            [ngClass]="{
+              badge: true,
+              'badge badge-secondary': true,
+              active: selectedTags.includes(tag)
+            }"
+          >
+            {{ tag }}
+          </span>
+        </div>
+        <button (click)="showAllTags()" class="btn btn-primary mt-3">
+          {{ showAllTagsFlag ? "Kevesebb címke" : "Több címke" }}
+        </button>
+      </div>
     </div>
 
     <!-- Selected Cake Image and Allergen Table -->
-    <div
-      class="col-md-6 d-flex justify-content-center align-items-start flex-column"
-    >
-      <div class="selected-cake-image mt-3" *ngIf="selectedCake">
-        <h5 class="text-center">{{ selectedCake.name }}</h5>
+    <div class="col-md-6 d-flex align-items-start flex-column">
+      <div class="selected-cake-image" *ngIf="selectedCake">
         <img
           [src]="selectedCake.imageUrl"
           alt="{{ selectedCake.name }}"
           class="img-fluid border rounded"
         />
+        <h5 class="text-center mt-3">{{ selectedCake.name }}</h5>
         <p class="mt-2 text-center">{{ selectedCake.description }}</p>
-        <p class="text-center">{{ selectedCake.price }} HUF</p>
+        <p class="text-center">
+          {{ selectedCake.price }} HUF / {{ selectedCake.unitOfMeasure }}
+        </p>
 
-        <!-- Allergen Table -->
         <!-- Allergen Table -->
         <table class="table table-bordered mt-3">
           <thead>

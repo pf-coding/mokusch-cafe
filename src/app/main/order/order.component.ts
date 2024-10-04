@@ -91,6 +91,20 @@ export class OrderComponent implements OnInit {
     }
   }
 
+  onCheckboxChange(type: string, index: number, event: Event) {
+    const input = event.target as HTMLInputElement;
+    const isChecked = input.checked;
+
+    if (isChecked) {
+      // Ha az egyik checkbox be van pipálva, állítsuk be az additionalPrice értéket
+      this.orderItems[index].additionalPrice =
+        type === 'highDecorated' ? 100 : 200;
+    } else {
+      // Ha nincs bejelölve semmi, állítsuk alapértelmezett értékre
+      this.orderItems[index].additionalPrice = 0;
+    }
+  }
+
   showToast(toastId: string) {
     const toastElement = document.getElementById(toastId);
     if (toastElement) {
@@ -303,16 +317,39 @@ export class OrderComponent implements OnInit {
       return;
     }
 
-    // Rendelés részletei (az orderItems frissített tömbjéből)
     const orderDetails = this.orderItems
       .map((item, index) => {
         const quantity = this.items.at(index).get('quantity')?.value || 1; // Biztosítja a mennyiséget
-        const calculatedPrice = item.price * quantity; // Dinamikus ár kiszámítása
-        return `\nTorta megnevezése: ${
-          item.name
-        }\nSzeletek száma: ${quantity}\nMegjegyzés: ${
+        const calculatedPrice =
+          (item.price + (item.additionalPrice || 0)) * quantity; // Dinamikus ár kiszámítása
+
+        // Checkboxok címkéinek kiírása
+        let highDecoratedLabel = '';
+        let extraCoatingLabel = '';
+
+        // Csak akkor adja hozzá a highDecoratedLabel-t, ha az unitOfMeasure 'szelet', és nem Piték vagy Mentes torták kategória
+        if (
+          item.unitOfMeasure === 'szelet' &&
+          item.category !== 'Piték' &&
+          item.category !== 'Mentes torták'
+        ) {
+          highDecoratedLabel =
+            item.additionalPrice && item.additionalPrice > 0
+              ? 'Magasított dísztortaként: Igen'
+              : 'Magasított dísztortaként: Nem';
+          extraCoatingLabel =
+            item.additionalPrice && item.additionalPrice > 100
+              ? 'Magasított dísztortaként extra bevonattal vagy díszítéssel: Igen'
+              : 'Magasított dísztortaként extra bevonattal vagy díszítéssel: Nem';
+        }
+
+        return `\nSütemény megnevezése: ${item.name}\nHány ${
+          item.unitOfMeasure
+        }-t szeretne rendelni: ${quantity}\nMegjegyzés: ${
           item.comment || 'Nincs megadva'
-        }\nÁr: ${calculatedPrice.toLocaleString('hu-HU')} Ft\n`; // Ár hozzáadása
+        }\nÁr: ${calculatedPrice.toLocaleString(
+          'hu-HU'
+        )} Ft\n${highDecoratedLabel}\n${extraCoatingLabel}\n`; // Ár hozzáadása
       })
       .join('\n'); // Join items with a newline for better separation
 
@@ -323,26 +360,21 @@ export class OrderComponent implements OnInit {
     const emailData = {
       to: 'bagettos@gmail.com',
       subject: `Rendelés ${this.orderForm.value.name} ${this.orderForm.value.date} ${this.orderForm.value.time}`,
-      body: `
-        Kedves Mókusch Café!\n
-        ${
+      body: [
+        `Kedves Mókusch Café!\n${
           this.orderForm.value.name
         } vagyok és az alábbi termékeket szeretném kérni tőletek a ${
-        this.orderForm.value.date
-      } dátumra, ${this.orderForm.value.time} órára ${
-        this.orderForm.value.deliveryMethod
-      } átvételi módon.\n\n
-        Adataim:\n
-        E-mail: ${this.orderForm.value.email}\n
-        Név: ${this.orderForm.value.name}\n
-        Telefonszám: ${this.orderForm.value.phone}\n
-        Üzenet: ${this.orderForm.value.message}\n\n
-        Rendelés részletei:\n
-        ${orderDetails}\n
-        Összesen: ${totalPrice.toLocaleString('hu-HU')} Ft\n
-        Köszönöm,\n
-        ${this.orderForm.value.name}
-      `,
+          this.orderForm.value.date
+        } dátumra, ${this.orderForm.value.time} órára ${
+          this.orderForm.value.deliveryMethod
+        }  módon.\nAdataim:\nE-mail: ${this.orderForm.value.email}\nNév: ${
+          this.orderForm.value.name
+        }\nTelefonszám: ${this.orderForm.value.phone}\nÜzenet: ${
+          this.orderForm.value.message
+        }\nRendelés részletei:\n${orderDetails}\nÖsszesen: ${totalPrice.toLocaleString(
+          'hu-HU'
+        )} Ft\nKöszönöm,\n${this.orderForm.value.name}`,
+      ].join('\n'),
     };
 
     this.http

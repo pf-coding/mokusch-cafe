@@ -1,6 +1,35 @@
+<section id="about-us" class="bg-light py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="mb-4">Kávézónk</h2>
+        <p>
+          A kávézóba betérve csupa otthonos ízvilágú finomság vár titeket,
+          szezonális alapanyagokból, amit csak lehet mi készítünk. Piték,
+          kekszek (igen, még kutyakeksz is), sütemények mosolyognak a pultban,
+          aztán természetesen ott vannak a mindenféle varázslatos itókák, aki
+          pedig rendesen szeretne reggelizni, frissen készítjük a töltött
+          bundáskenyereket és a szendvicseket.
+        </p>
+        <p>
+          A kis polcunk tele van azonnal vihető kutyafülékkel, a lekvárokon
+          keresztül a mogyoróvajon át szörpök, granola, és még sóskaramell öntet
+          is fellelhető itt. Ezek is előrendelhetőek akár bármiféle jófej vagy
+          nem jófej ember meglepésére, esetleg esküvős köszönőajándéknak
+        </p>
+        <p>
+          Rendelésre készítünk dísztortákat szülinapra/ esküvőre, vagy
+          akármiféle összeröffenésre. Persze ha már összeröffenés van, egy
+          csinos kis desszertasztalt is összeállíthattok a tortákon
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="container">
   <!-- Szűrők -->
-  <div class="row mb-4">
+  <div class="row mb-4 mt-4">
     <div class="col-md-4">
       <select [(ngModel)]="selectedCategory" class="form-control">
         <option value="">Összes kategória</option>
@@ -36,7 +65,7 @@
           />
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-text">{{ item.unit }}: {{ item.price }}</p>
+            <p class="card-text">{{ item.price }} HUF /{{ item.unit }}</p>
           </div>
         </div>
       </div>

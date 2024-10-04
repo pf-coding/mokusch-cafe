@@ -17,6 +17,8 @@ export class CakeCatalogComponent implements OnInit {
   itemsPerPage: number = 5;
   selectedTags: string[] = [];
   showAllTagsFlag: boolean = false;
+  availableCategories: string[] = [];
+  selectedCategory: string = ''; // Kategória szűrő
 
   constructor(
     public translationService: TranslationService,
@@ -26,13 +28,47 @@ export class CakeCatalogComponent implements OnInit {
   ngOnInit() {
     this.translationService.cakes$.subscribe((cakes) => {
       this.cakes = cakes;
+      this.updateAvailableCategories();
       this.updatePagination(); // Update pagination whenever cakes are loaded
       this.updateSelectedCakes(); // Load selected cakes from order service
     });
   }
 
+  updateAvailableCategories() {
+    this.availableCategories = [
+      ...new Set(this.cakes.map((cake) => cake.category)),
+    ];
+  }
+
   selectCake(cake: CakeModel) {
     this.selectedCake = cake;
+  }
+
+  filterByCategory(event: Event) {
+    const selectElement = event.target as HTMLSelectElement; // Típuscast
+    this.selectedCategory = selectElement.value; // Kategória érték beállítása
+    this.updatePagination(); // Frissíti a paginációt az új szűrés alapján
+  }
+
+  // Szűrt sütemények lekérése a címkék ÉS kategória alapján
+  getFilteredCakes() {
+    let filteredCakes = this.cakes;
+
+    // Kategória szűrés
+    if (this.selectedCategory) {
+      filteredCakes = filteredCakes.filter(
+        (cake) => cake.category === this.selectedCategory
+      );
+    }
+
+    // Címkék szerinti szűrés
+    if (this.selectedTags.length > 0) {
+      filteredCakes = filteredCakes.filter((cake) =>
+        cake.tags.some((tag) => this.selectedTags.includes(tag))
+      );
+    }
+
+    return filteredCakes;
   }
 
   nextPage() {
@@ -66,14 +102,14 @@ export class CakeCatalogComponent implements OnInit {
     this.updatePagination();
   }
 
-  getFilteredCakes() {
-    if (this.selectedTags.length === 0) {
-      return this.cakes; // If no tags selected, show all cakes
-    }
-    return this.cakes.filter((cake) =>
-      cake.tags.some((tag) => this.selectedTags.includes(tag))
-    );
-  }
+  // getFilteredCakes() {
+  //   if (this.selectedTags.length === 0) {
+  //     return this.cakes; // If no tags selected, show all cakes
+  //   }
+  //   return this.cakes.filter((cake) =>
+  //     cake.tags.some((tag) => this.selectedTags.includes(tag))
+  //   );
+  // }
 
   get popularTags() {
     const allTags = this.cakes.flatMap((cake) => cake.tags);

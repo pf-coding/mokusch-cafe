@@ -36,18 +36,17 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Rólunk
+            Ezek volnánk mi!
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#nyitvatartas">Nyitvatartás</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#lokacio">Lokáció</a>
+              <a class="dropdown-item" href="#nyitvatartas"
+                >Itt találsz minket!</a
+              >
             </li>
             <li>
               <a class="dropdown-item" routerLink="/employees">
-                Mókus lányok
+                A Mókusch lányok
               </a>
             </li>
           </ul>
@@ -60,28 +59,30 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Szolgáltatások
+            Rendelhető finomságok
           </a>
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" routerLink="/cakes">
-                Sütemények rendelésre
+                Rendelési felület
               </a>
             </li>
             <li>
-              <a class="dropdown-item" routerLink="/cafemenu"> Kávézó menü </a>
+              <a class="dropdown-item" routerLink="/cafemenu"
+                >Kávézónk választéka</a
+              >
             </li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="/cart">
-            Kosár
+            Finomságok kosara
             <span *ngIf="cartItemCount > 0" class="badge bg-danger ms-2">
               {{ cartItemCount }}
             </span>
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -103,7 +104,7 @@
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

@@ -4,7 +4,7 @@
     "name": "Csokoládétorta",
     "unit": "szelet",
     "price": 450,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Édességek"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Epres sütemény",
     "unit": "szelet",
     "price": 500,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Édességek"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Puncstorta",
     "unit": "szelet",
     "price": 480,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Édességek"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Kekszes szelet",
     "unit": "szelet",
     "price": 300,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Édességek"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Kávé",
     "unit": "dl",
     "price": 250,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Tej",
     "unit": "dl",
     "price": 200,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Zöld tea",
     "unit": "dl",
     "price": 300,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Üdítőital",
     "unit": "dl",
     "price": 350,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Gyümölcslé",
     "unit": "dl",
     "price": 400,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Fanta",
     "unit": "dl",
     "price": 300,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Italok"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Saláta",
     "unit": "tál",
     "price": 600,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Ételek"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Szendvics",
     "unit": "db",
     "price": 450,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Ételek"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Pasta",
     "unit": "tál",
     "price": 700,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Ételek"
   },
   {
@@ -108,7 +108,7 @@
     "name": "Pizza",
     "unit": "szelet",
     "price": 600,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Ételek"
   },
   {
@@ -116,7 +116,7 @@
     "name": "Tészta saláta",
     "unit": "tál",
     "price": 550,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Ételek"
   },
   {
@@ -124,7 +124,7 @@
     "name": "Gyümölcskeverék",
     "unit": "tál",
     "price": 500,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Snackek"
   },
   {
@@ -132,7 +132,7 @@
     "name": "Fűszeres dió",
     "unit": "dkg",
     "price": 450,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Snackek"
   },
   {
@@ -140,7 +140,7 @@
     "name": "Sós keksz",
     "unit": "dkg",
     "price": 200,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Snackek"
   },
   {
@@ -148,7 +148,7 @@
     "name": "Chips",
     "unit": "dkg",
     "price": 300,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Snackek"
   },
   {
@@ -156,7 +156,7 @@
     "name": "Popcorn",
     "unit": "dkg",
     "price": 250,
-    "imageUrl": "https://dummyimage.com/200x200/000/fff&text=Ez+egy+term%C3%A9k",
+    "imageUrl": "https://i.ibb.co/7RwRpvC/fotor-ai-202410050173.jpg",
     "category": "Snackek"
   }
 ]
