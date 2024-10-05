@@ -5,10 +5,19 @@
       <div class="col-12 col-md-6 mb-3">
         <label for="name">Írd meg nekünk a neved:</label>
         <input id="name" class="form-control" formControlName="name" required />
+        <span
+          *ngIf="
+            orderForm.get('name')?.touched && orderForm.get('name')?.invalid
+          "
+          class="text-danger"
+        >
+          A név megadása kötelező és nem tartalmazhat speciális karaktereket.
+        </span>
       </div>
+
       <div class="col-12 col-md-6 mb-3">
         <label for="email"
-          >Add meg az e-mail címed, hogy tudjunk neked válaszolni?</label
+          >Add meg az e-mail címed, hogy tudjunk neked válaszolni:</label
         >
         <input
           id="email"
@@ -17,12 +26,18 @@
           formControlName="email"
           required
         />
-      </div>
-      <div class="col-12 col-md-6 mb-3">
-        <label for="phone"
-          >Ha részletekről kell beszélnünk, kérlek add meg a telefonszámod
-          is:</label
+        <span
+          *ngIf="
+            orderForm.get('email')?.touched && orderForm.get('email')?.invalid
+          "
+          class="text-danger"
         >
+          Érvényes e-mail címet kell megadni.
+        </span>
+      </div>
+
+      <div class="col-12 col-md-6 mb-3">
+        <label for="phone">Telefonszám:</label>
         <input
           id="phone"
           type="text"
@@ -30,7 +45,16 @@
           formControlName="phone"
           required
         />
+        <span
+          *ngIf="
+            orderForm.get('phone')?.touched && orderForm.get('phone')?.invalid
+          "
+          class="text-danger"
+        >
+          Telefonszám megadása kötelező.
+        </span>
       </div>
+
       <div class="col-12 col-md-6 mb-3">
         <label for="deliveryMethod"
           >Hogyan szeretnéd átvenni a finomságokat amiket rendeltél?</label
@@ -40,10 +64,21 @@
           class="form-control"
           formControlName="deliveryMethod"
         >
+          <option value="">Válassz módot</option>
           <option value="személyesen">személyesen</option>
           <option value="kiszállításal">kiszállítással</option>
         </select>
+        <span
+          *ngIf="
+            orderForm.get('deliveryMethod')?.touched &&
+            orderForm.get('deliveryMethod')?.invalid
+          "
+          class="text-danger"
+        >
+          Kérjük válassza ki az átvétel módját!
+        </span>
       </div>
+
       <div class="col-12 col-md-6 mb-3">
         <label for="date">Melyik napon szeretnéd átvenni őket?</label>
         <input
@@ -54,6 +89,14 @@
           [min]="currentDate"
           required
         />
+        <span
+          *ngIf="
+            orderForm.get('date')?.touched && orderForm.get('date')?.invalid
+          "
+          class="text-danger"
+        >
+          Kérjük válasszon dátumot!
+        </span>
       </div>
 
       <div class="col-12 col-md-6 mb-3">
@@ -69,6 +112,14 @@
             {{ time }}
           </option>
         </select>
+        <span
+          *ngIf="
+            orderForm.get('time')?.touched && orderForm.get('time')?.invalid
+          "
+          class="text-danger"
+        >
+          Kérjük válassza ki az időpontot!
+        </span>
       </div>
 
       <div class="col-12 col-md-12 mb-3">

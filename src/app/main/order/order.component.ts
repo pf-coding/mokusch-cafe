@@ -23,14 +23,20 @@ export class OrderComponent implements OnInit {
     private fb: FormBuilder
   ) {
     this.orderForm = this.fb.group({
-      name: ['', Validators.required],
+      name: [
+        '',
+        [
+          Validators.required,
+          Validators.pattern(/^[a-zA-ZáéíóöőúüűÁÉÍÓÖŐÚÜŰ\s]+$/),
+        ],
+      ],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', Validators.required],
-      deliveryMethod: ['Személyes átvétel', Validators.required],
+      deliveryMethod: ['', Validators.required],
       date: ['', Validators.required],
-      time: [{ value: '', disabled: true }], // Initially disabled
+      time: [{ value: '', disabled: true }, Validators.required],
       message: [''],
-      items: this.fb.array([]), // FormArray for the order items
+      items: this.fb.array([]),
     });
 
     const today = new Date();
@@ -358,7 +364,7 @@ export class OrderComponent implements OnInit {
 
     // E-mail küldése az összes tételről
     const emailData = {
-      to: 'bagettos@gmail.com',
+      to: `bagettos@gmail.com, ${this.orderForm.value.email}`,
       subject: `Rendelés ${this.orderForm.value.name} ${this.orderForm.value.date} ${this.orderForm.value.time}`,
       body: [
         `Kedves Mókusch Café!\n${
