@@ -283,6 +283,7 @@ export class OrderComponent implements OnInit {
         '16:00',
         '16:30',
         '17:00',
+        '17:30',
       ], // Friday (Péntek)
       6: [
         '09:00',
@@ -303,16 +304,6 @@ export class OrderComponent implements OnInit {
     };
 
     this.availableTimes = openingHours[dayOfWeek] || [];
-  }
-  private convertToMinutes(time: string): number {
-    const [hours, minutes] = time.split(':').map(Number);
-    return hours * 60 + minutes;
-  }
-
-  private convertToTimeFormat(minutes: number): string {
-    const hours = Math.floor(minutes / 60);
-    const mins = minutes % 60;
-    return `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}`;
   }
 
   submitOrder() {
@@ -349,15 +340,18 @@ export class OrderComponent implements OnInit {
               : 'Magasított dísztortaként extra bevonattal vagy díszítéssel: Nem';
         }
 
-        return `\nSütemény megnevezése: ${item.name}\nHány ${
-          item.unitOfMeasure
-        }-t szeretne rendelni: ${quantity}\nMegjegyzés: ${
-          item.comment || 'Nincs megadva'
-        }\nÁr: ${calculatedPrice.toLocaleString(
-          'hu-HU'
-        )} Ft\n${highDecoratedLabel}\n${extraCoatingLabel}\n`; // Ár hozzáadása
+        return `
+        <div class="order-card">
+        <h3>${item.name}</h3>
+        <p>${quantity}${item.unitOfMeasure}</p>
+        <p>Megjegyzés: ${item.comment || 'Nincs megadva'}</p>
+        <p class="price">Ár: ${calculatedPrice.toLocaleString('hu-HU')} Ft</p>
+        <p class="decorated-label">${highDecoratedLabel}</p>
+        <p class="decorated-label">${extraCoatingLabel}</p>
+      </div>
+      `;
       })
-      .join('\n'); // Join items with a newline for better separation
+      .join(''); // Join items without newline since we are using <p> tags
 
     // Összesített ár
     const totalPrice = this.totalPrice;
@@ -366,21 +360,11 @@ export class OrderComponent implements OnInit {
     const emailData = {
       to: `bagettos@gmail.com, ${this.orderForm.value.email}`,
       subject: `Rendelés ${this.orderForm.value.name} ${this.orderForm.value.date} ${this.orderForm.value.time}`,
-      body: [
-        `Kedves Mókusch Café!\n${
-          this.orderForm.value.name
-        } vagyok és az alábbi termékeket szeretném kérni tőletek a ${
-          this.orderForm.value.date
-        } dátumra, ${this.orderForm.value.time} órára ${
-          this.orderForm.value.deliveryMethod
-        } venném át.\nAdataim:\nE-mail: ${this.orderForm.value.email}\nNév: ${
-          this.orderForm.value.name
-        }\nTelefonszám: ${this.orderForm.value.phone}\nÜzenet: ${
-          this.orderForm.value.message
-        }\nRendelés részletei:\n${orderDetails}\nÖsszesen: ${totalPrice.toLocaleString(
-          'hu-HU'
-        )} Ft\nKöszönöm,\n${this.orderForm.value.name}`,
-      ].join('\n'),
+      body: {
+        orderForm: this.orderForm.value, // az űrlap adatai
+        orderDetails: orderDetails, // a rendelési részletek
+        totalPrice: totalPrice, // a végösszeg
+      },
     };
 
     this.http
