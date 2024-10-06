@@ -343,7 +343,7 @@ export class OrderComponent implements OnInit {
         return `
         <div class="order-card">
         <h3>${item.name}</h3>
-        <p>${quantity}${item.unitOfMeasure}</p>
+        <p>${quantity} ${item.unitOfMeasure}</p>
         <p>Megjegyzés: ${item.comment || 'Nincs megadva'}</p>
         <p class="price">Ár: ${calculatedPrice.toLocaleString('hu-HU')} Ft</p>
         <p class="decorated-label">${highDecoratedLabel}</p>
