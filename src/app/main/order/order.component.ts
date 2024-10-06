@@ -359,11 +359,11 @@ export class OrderComponent implements OnInit {
     // E-mail küldése az összes tételről
     const emailData = {
       to: `bagettos@gmail.com, ${this.orderForm.value.email}`,
-      subject: `Rendelés ${this.orderForm.value.name} ${this.orderForm.value.date} ${this.orderForm.value.time}`,
+      subject: `Mókusch rendelés ${this.orderForm.value.name} ${this.orderForm.value.date} ${this.orderForm.value.time}`,
       body: {
-        orderForm: this.orderForm.value, // az űrlap adatai
-        orderDetails: orderDetails, // a rendelési részletek
-        totalPrice: totalPrice, // a végösszeg
+        orderForm: this.orderForm.value,
+        orderDetails: orderDetails,
+        totalPrice: totalPrice,
       },
     };
 
